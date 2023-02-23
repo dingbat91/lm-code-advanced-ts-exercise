@@ -1,13 +1,13 @@
-import { states } from "./states.mjs";
+import { states } from "./states";
 
 export class State {
-	#state = states.MENU;
+	#state: any = states.MENU;
 
 	get() {
 		return this.#state;
 	}
 
-	set(newState) {
+	set(newState: String) {
 		this.#state = newState;
 	}
 }
