@@ -10,7 +10,7 @@ export async function showMenu() {
 	print("4. Add user", false);
 	printNewLine();
 
-	const result = await prompt("What shall we do? ");
+	const result: String = await prompt("What shall we do? ");
 
 	if (result === "0") return states.SEND_MESSAGE;
 	if (result === "1") return states.SHOW_POSTS;
